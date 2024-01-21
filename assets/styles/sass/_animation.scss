@@ -1,0 +1,70 @@
+@keyframes bounceIn {
+  0% {
+    transform: scale(1);
+
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.fadeInAs{
+    animation: bounceOut 1s ease-in;
+}
+
+@keyframes bounceOut {
+  0% {
+    transform: scale(0.8);
+
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/* table animation  */
+
+.Ychange {
+  animation: Ystate 4s infinite;
+  // position: absolute;
+}
+
+@keyframes Ystate {
+  0% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}

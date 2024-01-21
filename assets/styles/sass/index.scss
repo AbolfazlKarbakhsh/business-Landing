@@ -1,0 +1,732 @@
+// imports
+
+@import "./mixin.scss";
+@import "./tabel.scss";
+@import "./fonts.scss";
+@import "./animation.scss";
+@import "./swiper";
+@import "grid";
+@import "./footer";
+@import "./loader";
+@import "./_bootstrrap.sass";
+
+
+// variable color
+
+$darkBook:#31404a;
+$headingBook:#516ca9;
+$white:#fff;
+$blueBook:#516ca9;
+$redBook:#f16583;
+$prupel:#516ca9;
+$gray:#cbd2da;
+
+$BrandBook:#FF5A24;
+$BrandBookHover:rgb(227, 224, 224);
+$dark:#000000;
+$LightGray:#FAFAFA;
+$BlightGray:#F1F1F1;
+$blueBrand:#00695C;
+$bodyColor:#f5f5f5;
+$boxColor:#EDEDED;
+$ColorText:#272727;
+$borderFocus:#b2b2b2;
+$white:#fff;
+
+$prim_color:#216d66;
+$sec_color:#FFD059;
+$sidebar: #1c334e;
+$side-titr: #112134;
+$main: #E8F2FC;
+$green-dark-opa:#00695d3f;
+$green-dark-opa-hover:#00695d5c;
+$green-dark-border:#00695d81;
+$green-dark:#00695C;
+$green-light:#04b19d;
+$megamenu : #212529;
+
+
+// *************************************
+// defualt styls 
+// *************************************
+
+// button:focus {
+//     border: none !important;
+//     outline: none !important;
+// }
+
+// form-control:focus {
+//     border-color: #ced4da !important;
+//     box-shadow: none !important;
+// } 
+
+.sh {
+    @include BoxShadow();
+}
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+}
+
+body.lightG1 {
+    @extend .pattern;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+
+    }
+}
+
+.overflow-y {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+input::placeholder {
+    color: #cecccc;
+}
+
+
+button:focus,
+button:hover,
+button:active button:focus-visible,
+.btn:focus,
+.btn:hover,
+.btn:active,
+.btn {
+    outline: none !important;
+    border: none !important;
+}
+
+
+
+
+
+
+
+.bg-dark-book {
+    background-color: $darkBook;
+}
+
+.bg-blue-book {
+    background-color: $blueBook;
+}
+
+.text-gray-book {
+    background-color: $darkBook;
+}
+
+.color-message {
+    list-style-type: none;
+
+    li {
+        color: $gray;
+    }
+}
+
+.meesage-color {
+    span:hover {
+        color: white;
+        transition: all .3s;
+        @extend .fw-4
+    }
+}
+
+
+.bg-dark-opa {
+    background-color: $darkBookOpa;
+}
+
+.border-bottom-hover {
+    animation: ease-out;
+    transition: all .3s;
+
+    &:hover {
+        border-bottom: 2px solid white;
+        padding-bottom: .3em;
+    }
+}
+
+
+.text-red {
+    color: $redBook;
+}
+
+.width-old-man {
+    width: 100%;
+    height: 300px;
+}
+
+@media (min-width:768px) {
+
+    .width-old-man {
+        width: 50vw;
+        height: auto;
+    }
+}
+
+.btn-redBook {
+    background: $redBook;
+    color: #fff;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $darkBook;
+        color: #fff;
+
+    }
+}
+
+.btn-prupelBook {
+    background: $prupel;
+    color: #fff;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $darkBook;
+        color: #fff;
+
+    }
+}
+
+
+.building {
+    background: linear-gradient(rgba(0, 0, 0, 0.858), rgba(0, 0, 0, 0.5)), url('../../images/grant-ritchie-FBkrQhnLQoY-unsplash.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.bg-secondary-opa{
+    background-color: #d4d4d42e;
+    color: #fff;
+    font-weight: 900;
+}
+
+.text-darkBook{
+    color: $darkBook;
+}
+.text-gray{
+    color: $gray;
+}
+
+
+
+
+.bBrand {
+    background-color: $green-dark;
+    transition: all .3s;
+
+    // &:hover {
+    //     @include hoverBtn();
+    // }
+}
+
+.bBlue {
+    background-color: $blueBrand;
+    transition: all .3s;
+
+    &:hover {
+        @include hoverBtn();
+    }
+}
+
+.sticky-top-01 {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.cb-text {
+    color: $green-dark !important;
+}
+
+.datalist option {
+    background: #fff;
+    padding: .8rem;
+    color: #000;
+}
+
+.cb-text-link {
+    color: $green-dark;
+    transition: all .3s;
+
+    &:hover {
+        color: $green-light;
+
+    }
+}
+
+.shake {
+    animation: shake 1.5s;
+}
+
+.Star {
+    color: #dc3545 !important;
+}
+
+.text-jusifuy {
+    text-align: justify;
+}
+
+hr:not([size]) {
+    height: .8px;
+}
+
+.text-brand {
+    color: $green-dark;
+}
+
+
+.text-sec {
+    color: $green-dark;
+}
+
+.flex-center {
+    @include Flex_center()
+}
+
+.z-index-h {
+    z-index: 3;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.cBlue {
+    color: $blueBrand;
+}
+
+.pattern {
+    width: 100%;
+    height: 100%;
+    background: url('../../images/banners/pattern.png') repeat #f3f7fa;
+}
+
+@media (max-width:543px) {
+    .font-sm-2 {
+        font-size: .9rem !important;
+    }
+}
+
+.d-flex1 {
+    display: flex;
+}
+
+.underlineA {
+    border-bottom: 1px solid $blueBrand;
+    text-decoration: none;
+}
+
+.noUnderLine {
+    text-decoration: none !important;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.noBold {
+    font-weight: 400 !important;
+
+}
+
+.badge {
+    font-weight: 100 !important;
+}
+
+.img-view {
+    max-width: 100%;
+    height: 350px;
+}
+
+.d-flexx {
+    display: flex;
+}
+
+.bg-blue-dark {
+    background-color: #2F2E41;
+    color: #dcdcdc;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.bi-trash {
+    cursor: pointer;
+    color: $green-light !important;
+}
+
+.text-dark-in * {
+    color: #000000;
+}
+
+.w-line,
+.w-line2,
+.w-line3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+/* scrolls  */
+*::-webkit-scrollbar {
+    background-color: #fff;
+    width: 16px;
+    border: 4px solid #fff;
+}
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+    border: 5px solid #fff;
+    width: 2px !important;
+}
+
+// *************************************
+//? deposit
+//*************************************
+
+main {
+    .text-notic {
+        line-height: 40px;
+        font-size: 1rem;
+    }
+}
+
+.headerText {
+    h1 {
+        font-size: 1.6rem;
+        color: hsl(210, 11%, 15%);
+        line-height: 45px;
+    }
+
+
+
+    h5 {
+        line-height: 35px;
+
+    }
+}
+
+
+
+//******************
+//? Compnents styls
+//******************
+
+.labelBox {
+    position: absolute;
+    top: -9px;
+    right: 8px;
+    background: #fff;
+    padding: 0 10;
+}
+
+@media (max-width:512px) {
+    .w-sm-100 {
+        width: 100% !important;
+    }
+}
+
+
+.img-detils-width {
+    width: auto !important;
+}
+
+@media (max-width:576px) {
+    .img-detils-width {
+        width: 95% !important;
+    }
+}
+
+
+.box-icon {
+    transition: all .5s;
+    @include Flex_center();
+}
+
+.box-user,
+.btn-brand {
+    background: $green-dark-opa;
+    border: 2px solid $green-dark-border !important;
+    cursor: pointer;
+
+    &:hover {
+        background: $green-dark-opa-hover !important;
+        transition: all 1s;
+
+    }
+
+    z-index: 1;
+
+}
+
+
+.box-circle {
+    background: $green-dark;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: .7rem;
+    color: #fff;
+    position: absolute;
+    left: -3px;
+    top: -18px;
+
+}
+
+
+// mega menu 
+@media screen and (min-width:768px) {
+    .show-menu {
+        width: auto !important;
+    }
+}
+
+.show-menu2 {
+    position: fixed;
+    height: 100vh;
+    z-index: 10;
+    right: 0px;
+    top: 0px;
+    background: $white;
+    width: 0px;
+
+    div {
+        display: flex !important;
+    }
+
+    li.row {
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #2727272e;
+    }
+
+    .nav-item a {
+        &:hover {
+            color: $green-dark !important;
+        }
+    }
+
+}
+
+.fother-nav2 {
+    position: fixed;
+    inset: 0;
+    width: 0px;
+    background: #00000056;
+    z-index: 5;
+}
+
+@media screen and (max-width:768px) {
+    .show-menu {
+        position: fixed;
+        width: 250px;
+        height: 100vh;
+        z-index: 10;
+        left: 0px;
+        top: 0px;
+        width: 0px;
+        background: $darkBook;
+
+        div {
+            display: flex !important;
+        }
+
+        li {
+            padding: 5px 10px;
+        }
+
+
+    }
+
+    .fother-nav {
+        position: fixed;
+        inset: 0;
+        background: #00000056;
+        z-index: 5;
+        width: 0px;
+    }
+
+    .nav-mobile {
+        width: 0px !important;
+    }
+
+    .no-center-align {
+        align-items: start !important;
+    }
+
+}
+
+
+
+//******************
+//? Banner
+//******************
+.content-banner {
+    h1 {
+        color: $green-dark;
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+    }
+
+    p {
+        color: $ColorText;
+        font-size: 1.3rem;
+    }
+}
+
+.mt-9 {
+    margin-top: 60px;
+}
+
+.number-box {
+    .number-box-number {
+        color: $gray;
+        font-size: 3.5rem !important;
+        margin-bottom: 0px;
+        transition: all .6s;
+
+    }
+
+    .number-box-text {
+        color: $ColorText;
+        margin-top: 0px;
+        font-size: 1rem !important;
+    }
+
+    &:hover {
+        transition: all .6s;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+
+        .number-box-number {
+            color: $redBook;
+        }
+    }
+}
+
+// circle 
+.circle-img-left {
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+}
+
+.circle-img-right {
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+}
+
+.req-img-bottom {
+    position: absolute;
+    bottom: 30%;
+    left: -20px;
+    z-index: 2;
+}
+
+@media (max-width:712px) {
+    .req-img-bottom {
+        left: 0px;
+
+    }
+}
+
+.img-full {
+    width: 100%;
+    height: 100vh;
+}
+
+.full-box-absolote {
+    position: absolute;
+    inset: 0px;
+}
+
+.relative {
+    position: relative;
+}
+
+.hv-100 {
+    height: 100vh;
+}
+
+.bg-banner {
+    // background-image: url('../../images/backgrounds/bg-sec-home.jpg');
+    background: #F6F6F6;
+}
+
+
+.resize-banner-box {
+    height: 100vh;
+}
+
+@media (min-width:1500px) {
+    .resize-banner-box {
+        padding: 20px 0;
+        height: auto;
+    }
+}
+
+@media (max-height:450px) {
+    .resize-banner-box {
+        height: auto;
+    }
+}
+
+@media (max-width:992.98px) {
+
+
+    .resize-banner-box {
+        height: auto;
+    }
+
+
+    .content-banner {
+        h1 {
+            font-size: 1.6rem !important;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: .8rem !important;
+        }
+    }
+
+    .mt-9 {
+        margin-top: 30px;
+    }
+
+    .number-box {
+        .number-box-number {
+            font-size: 1.5rem;
+        }
+
+        .number-box-text {
+            font-size: .7rem;
+        }
+    }
+
+    .img-margin-lg-top {
+        margin-top: 15px;
+    }
+
+}
