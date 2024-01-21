@@ -509,7 +509,7 @@ main {
     height: 100vh;
     z-index: 10;
     right: 10px;
-    top: 0px;
+    top: -10px;
     background: $white;
     width: 0px;
 
@@ -546,7 +546,7 @@ main {
         height: 100vh;
         z-index: 10;
         left: 0px;
-        top: 10px;
+        top: 0px;
         width: 0px;
         background: $darkBook;
 

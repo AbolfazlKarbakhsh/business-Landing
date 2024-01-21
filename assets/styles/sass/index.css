@@ -1504,7 +1504,7 @@ main .text-notic {
   height: 100vh;
   z-index: 10;
   right: 10px;
-  top: 0px;
+  top: -10px;
   background: #fff;
   width: 0px;
 }
@@ -1535,7 +1535,7 @@ main .text-notic {
     height: 100vh;
     z-index: 10;
     left: 0px;
-    top: 10px;
+    top: 0px;
     width: 0px;
     background: #31404a;
   }
