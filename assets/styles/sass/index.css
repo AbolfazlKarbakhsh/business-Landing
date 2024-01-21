@@ -422,7 +422,7 @@ swiper-container {
 }
 @media (min-width: 768px) {
   .mn-slider {
-    margin-top: -85px !important;
+    margin-top: -86px !important;
   }
   .slide, .swiper-slider-3, .swiper-slider-2, .swiper-slider-1 {
     background-position: center center !important;
