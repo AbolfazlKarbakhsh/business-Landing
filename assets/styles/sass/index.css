@@ -422,7 +422,7 @@ swiper-container {
 }
 @media (min-width: 768px) {
   .mn-slider {
-    margin-top: -86px !important;
+    margin-top: -85px !important;
   }
   .slide, .swiper-slider-3, .swiper-slider-2, .swiper-slider-1 {
     background-position: center center !important;
@@ -1114,6 +1114,10 @@ button {
     background-color: transparent;
   }
 }
+html {
+  width: 100%;
+}
+
 .sh {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px !important;
 }
@@ -1499,7 +1503,7 @@ main .text-notic {
   position: fixed;
   height: 100vh;
   z-index: 10;
-  right: 0px;
+  right: 10px;
   top: 0px;
   background: #fff;
   width: 0px;
@@ -1531,7 +1535,7 @@ main .text-notic {
     height: 100vh;
     z-index: 10;
     left: 0px;
-    top: 0px;
+    top: 10px;
     width: 0px;
     background: #31404a;
   }

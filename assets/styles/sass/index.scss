@@ -59,7 +59,9 @@ $megamenu : #212529;
 //     border-color: #ced4da !important;
 //     box-shadow: none !important;
 // } 
-
+html{
+    width: 100%;
+}
 .sh {
     @include BoxShadow();
 }
@@ -506,7 +508,7 @@ main {
     position: fixed;
     height: 100vh;
     z-index: 10;
-    right: 0px;
+    right: 10px;
     top: 0px;
     background: $white;
     width: 0px;
@@ -544,7 +546,7 @@ main {
         height: 100vh;
         z-index: 10;
         left: 0px;
-        top: 0px;
+        top: 10px;
         width: 0px;
         background: $darkBook;
 
