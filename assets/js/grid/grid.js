@@ -123,13 +123,57 @@ $(document).ready(function () {
       } else {
         seconds = seconds - 1;
       }
-    } 
+    }
 
-    min.innerHTML =  minutes 
-    sec.innerHTML =  seconds 
+    min.innerHTML = minutes
+    sec.innerHTML = seconds
 
   }
 
   setInterval(updateTimer, 1000);
 
 });
+
+// slider code    
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector('.magicSlider div div div').innerHTML = `
+<div class="owl-item active" style="width: 203.744px;">
+<div class="slide-product owl-carousel-item">
+
+  <div class="wpb_wrapper">
+      <div class="wpb_single_image wpb_content_element vc_align_right">
+
+          <figure class="wpb_wrapper vc_figure">
+              <div class="vc_single_image-wrapper   vc_box_border_grey"><img loading="lazy" decoding="async"
+                      width="215" height="300"
+                      src="https://navaastore.com/wp-content/uploads/2024/01/amazing-2-215x300.png"
+                      class="vc_single_image-img attachment-medium" alt="" title="amazing-2"
+                      srcset="https://navaastore.com/wp-content/uploads/2024/01/amazing-2-215x300.png 215w, https://navaastore.com/wp-content/uploads/2024/01/amazing-2-150x210.png 150w, https://navaastore.com/wp-content/uploads/2024/01/amazing-2.png 500w"
+                      sizes="(max-width: 215px) 100vw, 215px"></div>
+          </figure>
+      </div>
+  </div>
+</div>
+</div>
+`
+  
+// color code 
+document.querySelectorAll(".wd-tools-count").forEach(item => item.style.cssText += 'background-color:rgb(243,174,193) !important;')
+document.querySelectorAll(".meta-post-categories").forEach(item => item.style.cssText += 'background-color:rgb(243,174,193) !important;')
+document.querySelectorAll(".btn-color-primary").forEach(item => item.style.cssText += 'background-color:rgb(243,174,193) !important;')
+document.querySelectorAll(".woocommerce-Price-amount").forEach(item => item.style.cssText += 'color:rgb(243,174,193) !important;')
+document.querySelectorAll(".btn-read-more").forEach(item => item.style.cssText += 'color:rgb(243,174,193) !important;')
+
+})
+
+  setTimeout(()=> {
+// color code 
+document.querySelectorAll(".wd-tools-count").forEach(item => item.style.cssText += 'background-color:rgb(243,174,193) !important;')
+document.querySelectorAll(".woocommerce-Price-amount").forEach(item => item.style.cssText += 'color:rgb(243,174,193) !important;')
+document.querySelectorAll(".btn-color-primary").forEach(item => item.style.cssText += 'background-color:rgb(243,174,193) !important;')
+} , 3000)
+})
+
+
+
+
